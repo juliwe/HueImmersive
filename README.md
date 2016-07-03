@@ -1,7 +1,9 @@
+_**HueImmersive is no longer in development and currently out of date**_
+
 ## Description
 HueImmersive is an application that tries to generate the ambient light from your screen with the Philips hue lights. It should create a similar atmosphere, as in a picture, movie or game that your screen displays.
 
-If you’ve found a bug or have a problem create an [issue](https://github.com/Blodjer/HueImmersive/issues/new) or contact me via [Email](mailto: blodjer@live.de) or [Reddit](http://redd.it/2e3vq9). Also feel free to send me suggestions and feedback.
+If you’ve found a bug or have a problem create an [issue](https://github.com/Blodjer/HueImmersive/issues/new) or contact me via [Email](mailto: mail@blodjer.com) or [Reddit](https://www.reddit.com/message/compose/?to=Blodjer). Also feel free to send me suggestions and feedback.
 You can also download or fork this project to make it even better. Any help is welcome!
  
 If you you want to support me with a donation: [Thank you!](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BVVY8L9TTPQFJ)
@@ -24,7 +26,13 @@ You can also set the brightness and aspect ratio for the screen capture. Advance
 * OS X
 
 ### Requirements (Developer)
-*will be added soon*
+* HueImmersive Development Branch: https://github.com/Blodjer/HueImmersive/tree/develop
+* Java Development Kit: http://www.oracle.com/technetwork/java/javase/downloads/index.html
+
+##### Libraries:
+* Gson: http://repo1.maven.org/maven2/com/google/code/gson/gson/
+* JGoodies Common: http://www.jgoodies.com/downloads/archive/
+* JGoodies Forms: http://www.jgoodies.com/downloads/archive/
 
 <br>
 ## How It Works
@@ -34,12 +42,11 @@ The application takes several shots in the second of your screen. To get a good 
 
 In the further process the program will analyze these chunks and extract specific colors. Actually available are the average color, bright and dark areas and the most saturated color. Each light can pick one of these extracted colors.
 
-<br> *More infos will be added soon.*
 <br>
 -
 ### Additional  Links
 * Philips hue: http://www.meethue.com
-* Reddit discussion: http://redd.it/2e3vq9
+* Reddit discussion (archived): http://redd.it/2e3vq9
 
 -
-###### *<sub>sorry for the possibly bad English</sub>*
+###### *<sub>sorry for my english</sub>*
