@@ -169,6 +169,17 @@ class SettingsBridge // bridge settings
 	{
 		return prefs.get("internalipaddress", null);
 	}
+
+	public void setUsername(String username)
+	{
+		prefs.put("username", username);
+	}
+
+	public String getUsername()
+	{
+		return prefs.get("username", null);
+	}
+
 }
 
 class SettingsLight // light settings

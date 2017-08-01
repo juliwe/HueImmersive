@@ -10,8 +10,8 @@ import com.google.gson.*;
 public class HBridge
 {
 	public static String internalipaddress = Settings.Bridge.getInternalipaddress();
+	public static String username = Settings.Bridge.getUsername();
 
-	public static final String username = "hueimmersiveuser";
 	public static final String devicetype = "hueimmersive";
 	
 	public  static ArrayList<HLight> lights = new ArrayList<HLight>();
@@ -184,7 +184,7 @@ public class HBridge
 		final Timer timer = new Timer();
 		TimerTask addUserLoop = new TimerTask()
 		{
-			String body = "{\"devicetype\": \"" + devicetype + "\", \"username\": \"" + username + "\"}";
+			String body = "{\"devicetype\": \"" + devicetype + "\"}";
 			int tries = 0;
 			public void run()
 			{
@@ -194,9 +194,11 @@ public class HBridge
 					JsonObject response = HRequest.POST("http://" + internalipaddress + "/api/", body);
 					if (HRequest.responseCheck(response) == "success")
 					{
+						username = response.getAsJsonObject("success").get("username").getAsString();
+						Settings.Bridge.setUsername(username);
 						timer.cancel();
 						timer.purge();
-						Debug.info(null, "new user created");
+						Debug.info(null, "new user created: " + username);
 						login();
 					}
 					else if (tries > 20) // abort after serval tries

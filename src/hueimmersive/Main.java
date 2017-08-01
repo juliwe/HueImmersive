@@ -12,8 +12,8 @@ public class Main
 	public static UserInterface ui;
 	public static Control hueControl;
 	
-	public static final String version = "0.5";
-	public static final int build = 18;
+	public static final String version = "0.6";
+	public static final int build = 19;
 	
 	public static boolean updateAvailable;
 	

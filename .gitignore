@@ -11,8 +11,13 @@
 .classpath
 .settings
 
+# IntelliJ
+.idea/
+*.iml
+
 # Generated files
 bin/
+out/
 
 # Local configuration file (sdk path, etc)
 local.properties

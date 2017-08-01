@@ -1,3 +1,6 @@
+## v0.6 (1 Aug 2017) ##
+ - fixed bridge connection problems (new protocol)
+
 ## v0.5 (24 Dec 2014) ##
  - add saturation slider
  - add new start parameters: force-on, force-off, force-start
