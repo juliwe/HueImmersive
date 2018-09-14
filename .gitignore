@@ -1,6 +1,8 @@
 # Java class files
 *.class
 
+.DS_store
+
 # Package Files
 *.jar
 *.war
